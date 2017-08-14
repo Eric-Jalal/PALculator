@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="PP3" parent="android:Theme.Material.Light" >
+        <item name="android:colorPrimary">@color/primary_material_light_1</item>
+        <item name="android:navigationBarColor">#37474F</item>
+        <item name="android:statusBarColor">#4FC3F7</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primary_material_light_1</item>
+        <item name="android:navigationBarColor">#37474F</item>
+        <item name="android:statusBarColor">#4FC3F7</item>
+
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+</resources>
