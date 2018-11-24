@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -24,12 +25,9 @@ public class HistoryActivity extends AppCompatActivity {
         CalligraphyConfig.initDefault(new CalligraphyConfig.Builder().setDefaultFontPath("fonts/Roboto-Thin.ttf").setFontAttrId(R.attr.fontPath).build()); // Declaring the globalized font face
         setContentView(R.layout.activity_history);
 
-        //ListView list = new ListView(R.id.lis);
         DatabaseHandler db = new DatabaseHandler(this);
         Cursor cursor = db.fetchAllHistory();
-        ///////For logging purposes code below for print out cursor
-        //Log.d("DB UTILS", "DB UTILS");
-        //DatabaseUtils.dumpCursorToString(cursor);
+        Log.d("DB UTILS", "DB UTILS");
         // columns to be bound
         String[] columns = new String[] {
                 DatabaseHandler.getKeyId(),

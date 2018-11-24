@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -93,9 +94,7 @@ class DatabaseHandler extends SQLiteOpenHelper {
         if (mCursor != null) {
             mCursor.moveToFirst();
         }
-        //Log.d("Insert", "Fetch Inserted");
-        //String testResult = DatabaseUtils.dumpCursorToString(mCursor);
-        //Log.d("testResult", testResult);
+        Log.d("Insert", "Fetch Inserted");
         return mCursor;
     }
 

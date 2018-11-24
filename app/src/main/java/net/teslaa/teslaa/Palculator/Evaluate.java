@@ -12,7 +12,7 @@ class Evaluate {
         hmp.put(op.getOperator(), op);
     }
 
-    public boolean getSt(){
+    boolean getSt(){
         return st.isStatus();
     }
 

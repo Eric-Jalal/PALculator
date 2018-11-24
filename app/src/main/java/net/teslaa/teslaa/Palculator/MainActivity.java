@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
         eval.addOperator(new Plus(2));
         eval.addOperator(new Minus(2));
         eval.addOperator(new Mult(2));
-        eval.addOperator(new Divid(2));
+        eval.addOperator(new Divide(2));
         final DatabaseHandler db = new DatabaseHandler(this);
         db.dbCreator();
 
@@ -203,18 +203,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int result = eval.expAnalyzer(tv.getText().toString());
                 tvResult.setText( result + " ");
-                ///////
-                //Log.d("Insert", "Inserting...");
+                Log.d("Insert", "Inserting...");
                 db.addRecord(new HistoryDefinition(tv.getText().toString(), Integer.toString(result)));
-                ///////
-                /*Log.d("Insert", "Fetch Inserted");
-                List<HistoryDefinition> historyList = db.getAllHistory();
-                for (HistoryDefinition hi : historyList) {
-                    String log = "Id: "+ hi.getId() +" ,Statement: " + hi.getStatement() + " Result " + result;
-                    // Writing Contacts to log
-                    Log.d("Name: ", log);
-                }*/
-                //Status st = new Status();
+
                 if(eval.getSt()){
                     Toast.makeText(getApplicationContext(), "Evaluated", Toast.LENGTH_SHORT).show();
                 } else {

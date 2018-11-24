@@ -6,19 +6,19 @@ package net.teslaa.teslaa.Palculator;
  * of how many digit have to pop out from stack and get calculated by it's operator action performer. *
  * difference between Operator-extending classes are in doAction methods rely on wich type of operator they want to calculate because of
  * some math differences.
- * @author A.jalalalhoseini
+ * @author Teslaa
  */
 
 public abstract class Operator {
     //String symbol;
-    int operandNumber;
+    private int operandNumber;
 
     /**
      * Operator default constructor to get limitation
      * of how many digit have to pop out from stack and get calculated by it's operator action performer.
      *
      */
-    public Operator(int opNumber) {
+    Operator(int opNumber) {
         this.operandNumber = opNumber;
     }
 
@@ -40,21 +40,21 @@ public abstract class Operator {
      * of how many digit have to pop out from stack and get calculated by it's operator action performer.
      * @return limitation
      */
-    public int getOperandNumber() {
+    int getOperandNumber() {
         return operandNumber;
     }
 }
 
 class Plus extends Operator {
 
-    public Plus(int opNumber) {
+    Plus(int opNumber) {
         super(opNumber);
     }
 
     public int doAction(int Arr[]) {
         int result = 0;
-        for (int i = 0; i < Arr.length; i++) {
-            result += Arr[i];
+        for (int aArr : Arr) {
+            result += aArr;
         }
         return result;
     }
@@ -67,14 +67,14 @@ class Plus extends Operator {
 
 class Minus extends Operator {
 
-    public Minus(int opNumber) {
+    Minus(int opNumber) {
         super(opNumber);
     }
 
     public int doAction(int Arr[]) {
         int result = 0;
-        for (int i = 0; i < Arr.length; i++) {
-            result = Arr[i] - result;
+        for (int aArr : Arr) {
+            result = aArr - result;
         }
         return result;
     }
@@ -87,14 +87,14 @@ class Minus extends Operator {
 
 class Mult extends Operator {
 
-    public Mult(int opNumber) {
+    Mult(int opNumber) {
         super(opNumber);
     }
 
     public int doAction(int Arr[]) {
         int result = 1;
-        for (int i = 0; i < Arr.length; i++) {
-            result *= Arr[i];
+        for (int aArr : Arr) {
+            result *= aArr;
         }
         return result;
     }
@@ -105,18 +105,18 @@ class Mult extends Operator {
 
 }
 
-class Divid extends Operator {
+class Divide extends Operator {
 
-    public Divid(int opNumber) {
+    Divide(int opNumber) {
         super(opNumber);
     }
 
         public int doAction ( int Arr[]){
             try{
         int result = 1;
-        for (int i = 0; i < Arr.length; i++) {
-            result = Arr[i] / result;
-        }
+                for (int aArr : Arr) {
+                    result = aArr / result;
+                }
         return result;
             } catch (ArithmeticException e){return 0;}
     }
