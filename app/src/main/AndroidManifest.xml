@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.ajalalalhoseini.myapplication">
+    package="com.teslaa.teslaa.myapplication">
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name="com.teslaa.teslaa.myapplication.net.teslaa.teslaa.myapplication.MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,14 +23,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".HistoryActivity"
+            android:name="com.teslaa.teslaa.myapplication.net.teslaa.teslaa.myapplication.HistoryActivity"
             android:screenOrientation="portrait"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="com.teslaa.teslaa.myapplication.net.teslaa.teslaa.myapplication.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value="com.teslaa.teslaa.myapplication.net.teslaa.teslaa.myapplication.MainActivity" />
             </activity>
-        <activity android:name=".HelpActivity"/>
+        <activity android:name="com.teslaa.teslaa.myapplication.net.teslaa.teslaa.myapplication.HelpActivity"/>
     </application>
 
 </manifest>

@@ -1,7 +1,7 @@
-package com.example.butterknife;
+package com.teslaa.butterknife;
 
 import android.test.ActivityInstrumentationTestCase2;
-import com.example.butterknife.library.SimpleActivity;
+import com.teslaa.butterknife.library.SimpleActivity;
 
 public final class SimpleActivityTest extends ActivityInstrumentationTestCase2<SimpleActivity> {
   public SimpleActivityTest() {

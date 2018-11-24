@@ -1,14 +1,14 @@
-package com.example.butterknife.library;
+package com.teslaa.butterknife.library;
 
 import android.content.Context;
 import android.view.View;
-import com.example.butterknife.R;
+import com.teslaa.butterknife.R;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.RuntimeEnvironment;
 
-import static com.example.butterknife.library.SimpleAdapter.ViewHolder;
+import static com.teslaa.butterknife.library.SimpleAdapter.ViewHolder;
 import static com.google.common.truth.Truth.assertThat;
 
 @RunWith(RobolectricTestRunner.class)

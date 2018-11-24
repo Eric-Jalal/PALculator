@@ -1,4 +1,4 @@
-package com.example.butterknife.library;
+package com.teslaa.butterknife.library;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -16,7 +16,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import butterknife.OnItemClick;
 import butterknife.OnLongClick;
-import com.example.butterknife.R;
+import com.teslaa.butterknife.R;
 
 import java.util.List;
 

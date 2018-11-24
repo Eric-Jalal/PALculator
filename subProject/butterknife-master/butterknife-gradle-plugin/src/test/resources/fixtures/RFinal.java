@@ -1,4 +1,4 @@
-package com.example.butterknife;
+package com.teslaa.butterknife;
 
 public final class R {
   public static final class array {

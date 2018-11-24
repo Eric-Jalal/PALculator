@@ -1,4 +1,4 @@
-package com.example.butterknife.unbinder;
+package com.teslaa.butterknife.unbinder;
 
 import android.support.annotation.ColorInt;
 import android.view.View;

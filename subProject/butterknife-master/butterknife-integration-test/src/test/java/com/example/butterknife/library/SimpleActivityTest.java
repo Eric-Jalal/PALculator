@@ -1,8 +1,8 @@
-package com.example.butterknife.library;
+package com.teslaa.butterknife.library;
 
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
-import com.example.butterknife.R;
+import com.teslaa.butterknife.R;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;

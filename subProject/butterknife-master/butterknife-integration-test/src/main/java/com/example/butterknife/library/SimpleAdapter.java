@@ -1,4 +1,4 @@
-package com.example.butterknife.library;
+package com.teslaa.butterknife.library;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,7 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import com.example.butterknife.R;
+import com.teslaa.butterknife.R;
 
 import java.util.Locale;
 
