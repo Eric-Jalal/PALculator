@@ -15,7 +15,7 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
@@ -24,43 +24,43 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 public class MainActivity extends AppCompatActivity {
 
     private Evaluate eval = new Evaluate();
-    @Bind(R.id.button0)
+    @BindView(R.id.button0)
     Button bt0;
-    @Bind(R.id.button1)
+    @BindView(R.id.button1)
     Button bt1;
-    @Bind(R.id.button2)
+    @BindView(R.id.button2)
     Button bt2;
-    @Bind(R.id.button3)
+    @BindView(R.id.button3)
     Button bt3;
-    @Bind(R.id.button4)
+    @BindView(R.id.button4)
     Button bt4;
-    @Bind(R.id.button5)
+    @BindView(R.id.button5)
     Button bt5;
-    @Bind(R.id.button6)
+    @BindView(R.id.button6)
     Button bt6;
-    @Bind(R.id.button7)
+    @BindView(R.id.button7)
     Button bt7;
-    @Bind(R.id.button8)
+    @BindView(R.id.button8)
     Button bt8;
-    @Bind(R.id.button9)
+    @BindView(R.id.button9)
     Button bt9;
-    @Bind(R.id.buttonDivision)
+    @BindView(R.id.buttonDivision)
     Button btDi;
-    @Bind(R.id.buttonDot)
+    @BindView(R.id.buttonDot)
     ImageButton btSpace;
-    @Bind(R.id.buttonBackspace)
+    @BindView(R.id.buttonBackspace)
     ImageButton btBackspace;
-    @Bind(R.id.buttonMultiply)
+    @BindView(R.id.buttonMultiply)
     Button btM;
-    @Bind(R.id.buttonPlus)
+    @BindView(R.id.buttonPlus)
     Button btP;
-    @Bind(R.id.buttonSubtract)
+    @BindView(R.id.buttonSubtract)
     Button btS;
-    @Bind(R.id.buttonEqual)
+    @BindView(R.id.buttonEqual)
     Button btEqual;
-    @Bind(R.id.tcExp)
+    @BindView(R.id.tcExp)
     TextView tv;
-    @Bind(R.id.tvResult)
+    @BindView(R.id.tvResult)
     TextView tvResult;
 
     @Override
