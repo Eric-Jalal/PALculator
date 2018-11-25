@@ -1,36 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.teslaa.teslaa.myapplication">
+    package="net.teslaa.teslaa.Palculator">
 
-    <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
+        android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.teslaa.teslaa.myapplication.net.teslaa.teslaa.myapplication.MainActivity"
+            android:name=".MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity
-            android:name="com.teslaa.teslaa.myapplication.net.teslaa.teslaa.myapplication.HistoryActivity"
+            android:name=".HistoryActivity"
             android:screenOrientation="portrait"
-            android:parentActivityName="com.teslaa.teslaa.myapplication.net.teslaa.teslaa.myapplication.MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.teslaa.teslaa.myapplication.net.teslaa.teslaa.myapplication.MainActivity" />
-            </activity>
-        <activity android:name="com.teslaa.teslaa.myapplication.net.teslaa.teslaa.myapplication.HelpActivity"/>
+            android:parentActivityName=".MainActivity"/>
     </application>
 
 </manifest>
